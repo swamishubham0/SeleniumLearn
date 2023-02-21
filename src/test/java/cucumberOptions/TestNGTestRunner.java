@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 				"json:target/cucumberJReport.json", 				// to generate json report
 				"junit:target/cucumberJUnitReport.xml" 				// to generate xml report
 		}
-	 ,dryRun = true 												// to generate the step definitions
+//	 ,dryRun = true 												// to generate the step definitions
 )
 
 public class TestNGTestRunner extends AbstractTestNGCucumberTests {

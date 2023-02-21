@@ -11,56 +11,41 @@
       <![CDATA[Maximizing the window to check if the browser is started.]]>
     </line>
     <line>
-      <![CDATA[CDwindow-96EB483A0228594FCEA1F01C30F464B2]]>
+      <![CDATA[CDwindow-F3645ABF702A7A3941DCB59462427D57]]>
     </line>
     <line>
-      <![CDATA[Navigating to Login page: https://www.saucedemo.com/]]>
-    </line>
-    <line>
-      <![CDATA[Entering standard_user at user name (OR Locator: id_username)]]>
-    </line>
-    <line>
-      <![CDATA[Entering Password at password (OR Locator: id_pwd)]]>
-    </line>
-    <line>
-      <![CDATA[Clicking on Login Button (OR Locator: name_loginButton)]]>
-    </line>
-    <line>
-      <![CDATA[Asserting text is 'PRODUCTS' at (OR Locator: xpath_ProductsTitle)]]>
-    </line>
-    <line>
-      <![CDATA[Products present on the page:6]]>
+      <![CDATA[Opening URL: https://rahulshettyacademy.com/AutomationPractice/]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-05T21:05:18 IST" name="Default suite" finished-at="2023-01-05T21:05:27 IST" duration-ms="8704">
+  <suite started-at="2023-02-21T19:38:45 IST" name="Default suite" finished-at="2023-02-21T19:38:50 IST" duration-ms="4939">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@40a4337a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@139982de]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-01-05T21:05:18 IST" name="Default test" finished-at="2023-01-05T21:05:27 IST" duration-ms="8704">
+    <test started-at="2023-02-21T19:38:45 IST" name="Default test" finished-at="2023-02-21T19:38:50 IST" duration-ms="4939">
       <class name="cucumberOptions.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.TestNGTestRunner@40a4337a]" started-at="2023-01-05T21:05:18 IST" name="setUpClass" finished-at="2023-01-05T21:05:18 IST" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.TestNGTestRunner@139982de]" started-at="2023-02-21T19:38:45 IST" name="setUpClass" finished-at="2023-02-21T19:38:45 IST" duration-ms="302" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3a17b2e3]]>
+                <![CDATA[org.testng.TestRunner@de81be1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@40a4337a]" started-at="2023-01-05T21:05:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-05T21:05:27 IST" duration-ms="8061" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@139982de]" started-at="2023-02-21T19:38:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-21T19:38:49 IST" duration-ms="4473" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Home Page Login"]]>
+                <![CDATA["Automating Dropdown Element"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["SouceDemo Login"]]>
+                <![CDATA["Automate Web elements"]]>
               </value>
             </param>
           </params>
@@ -75,29 +60,14 @@
               <![CDATA[Maximizing the window to check if the browser is started.]]>
             </line>
             <line>
-              <![CDATA[CDwindow-96EB483A0228594FCEA1F01C30F464B2]]>
+              <![CDATA[CDwindow-F3645ABF702A7A3941DCB59462427D57]]>
             </line>
             <line>
-              <![CDATA[Navigating to Login page: https://www.saucedemo.com/]]>
-            </line>
-            <line>
-              <![CDATA[Entering standard_user at user name (OR Locator: id_username)]]>
-            </line>
-            <line>
-              <![CDATA[Entering Password at password (OR Locator: id_pwd)]]>
-            </line>
-            <line>
-              <![CDATA[Clicking on Login Button (OR Locator: name_loginButton)]]>
-            </line>
-            <line>
-              <![CDATA[Asserting text is 'PRODUCTS' at (OR Locator: xpath_ProductsTitle)]]>
-            </line>
-            <line>
-              <![CDATA[Products present on the page:6]]>
+              <![CDATA[Opening URL: https://rahulshettyacademy.com/AutomationPractice/]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestNGTestRunner@40a4337a]" started-at="2023-01-05T21:05:27 IST" name="tearDownClass" finished-at="2023-01-05T21:05:27 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestNGTestRunner@139982de]" started-at="2023-02-21T19:38:49 IST" name="tearDownClass" finished-at="2023-02-21T19:38:50 IST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,21 +1,14 @@
 package tests;
 
 import java.io.FileInputStream;
-import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import dev.failsafe.Timeout;
 import utilities.Logs;
 import utilities.SecureUtil;
 
@@ -90,6 +83,15 @@ public class TestBase {
 	public void assertText(String orLocator, String textToVerify, String elementName) {
 		Logs.log("Asserting text is '" + textToVerify + "' at (OR Locator: " + orLocator + ")");
 		Assert.assertEquals(getElement(orLocator).getText(), textToVerify);
+	}
+	
+	/**
+	 * This method implements driver.get(URL)
+	 * @param URL
+	 */
+	public void getURL(String URL) {
+		Logs.log("Opening URL: " + URL);
+		driver.get(URL);
 	}
 
 }
