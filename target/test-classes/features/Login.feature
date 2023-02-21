@@ -8,7 +8,6 @@ Background:
 	When Browser is triggered
 	Then Check if browser is started
 
-
   Scenario: Home Page Login 
     Given User is on SauceDemo Login Page
     When User Login to application with username and password
