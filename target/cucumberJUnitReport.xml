@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.138">
+    <testcase classname="SouceDemo Login" name="Home Page Login" time="7.975">
+        <system-out><![CDATA[Given Properties Files are Setup............................................passed
+And Browser is setup........................................................passed
+When Browser is triggered...................................................passed
+Then Check if browser is started............................................passed
+Given User is on SauceDemo Login Page.......................................passed
+When User Login to application with username and password...................passed
+Then Home page is displayed.................................................passed
+And Shopping Items are displayed on the homepage............................passed
+]]></system-out>
+    </testcase>
+</testsuite>
