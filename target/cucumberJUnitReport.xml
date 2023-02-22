@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.531">
-    <testcase classname="Automate Web elements" name="Automating Dropdown Element" time="4.414">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.698">
+    <testcase classname="Automate Web elements" name="AutomationCheckbox Element" time="9.512">
         <system-out><![CDATA[Given Properties Files are Setup............................................passed
 And Browser is setup........................................................passed
 When Browser is triggered...................................................passed
 Then Check if browser is started............................................passed
-Given user is on the home page of Practice Page.............................passed
-And User verifies there are 4 options in the dropdown.......................passed
-Then user selects "Option2" from the Dropdown...............................passed
+Given user is on the home page of SpiceJet Page.............................passed
+Then User selects checkbox of "Senior Citizen"..............................passed
 ]]></system-out>
     </testcase>
 </testsuite>

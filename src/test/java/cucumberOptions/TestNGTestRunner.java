@@ -10,8 +10,10 @@ import io.cucumber.testng.CucumberOptions;
 				"progress", "html:target/cucumberReport.html", 		// to generate cucumber reports
 				"json:target/cucumberJReport.json", 				// to generate json report
 				"junit:target/cucumberJUnitReport.xml" 				// to generate xml report
+		
 		}
-//	 ,dryRun = true 												// to generate the step definitions
+//		,dryRun = true 												// to generate the step definitions
+		,tags = "@CheckBox"
 )
 
 public class TestNGTestRunner extends AbstractTestNGCucumberTests {
