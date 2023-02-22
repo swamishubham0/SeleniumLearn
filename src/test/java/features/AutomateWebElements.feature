@@ -35,3 +35,25 @@ Background:
 	Scenario: Automation of Calendar UI Element
 		Given user is on the home page of SpiceJet Page
     Then User selects today's date on calendar
+    
+   @WebElements @AngularPage
+	Scenario Outline: Submit data on Angular Practice page
+		Given user is on the home page of Angular practice Page
+    And User enters following data "<Name>" ,"<Email>", "<Password>", "<Check>", "<Gender>", "<Employment Status>", "<Date of Birth>" and submits
+    Then verify user receives success message
+    
+    Examples:
+     	|Name 			|Email 								| Password	|Check		|Gender	|Employment Status 	|Date of Birth	|
+ 			|Test Name	|testEmail@none.com		|Pa$$W0rd		|true			|Female	|Student						|25-06-2000			|
+   
+   @WebElements @Alerts
+	Scenario: Automation Dynamic Dropdown Element
+		Given  user is on the home page of Practice Page
+		And user clicks on Alert button on practice page
+		Then verify user is prompted by an alert
+		And user clicks on confirm button on practice page
+		Then verify user is able to dismiss the alert
+	
+    
+    
+    

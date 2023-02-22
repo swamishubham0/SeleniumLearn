@@ -60,6 +60,8 @@ public class TestBase {
 			by = By.name(loc);
 		} else if (orLocator.startsWith("class")) {
 			by = By.className(loc);
+		} else if (orLocator.startsWith("tagName")) {
+			by = By.tagName(loc);
 		}
 
 		return by;

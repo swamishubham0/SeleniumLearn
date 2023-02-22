@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.037">
-    <testcase classname="Automate Web elements" name="Automation of Calendar UI Element" time="7.927">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.352">
+    <testcase classname="Automate Web elements" name="Automation Dynamic Dropdown Element" time="5.202">
         <system-out><![CDATA[Given Properties Files are Setup............................................passed
 And Browser is setup........................................................passed
 When Browser is triggered...................................................passed
 Then Check if browser is started............................................passed
-Given user is on the home page of SpiceJet Page.............................passed
-Then User selects today's date on calendar..................................passed
+Given user is on the home page of Practice Page.............................passed
+And user clicks on Alert button on practice page............................passed
+Then verify user is prompted by an alert....................................passed
+And user clicks on confirm button on practice page..........................passed
+Then verify user is able to dismiss the alert...............................passed
 ]]></system-out>
     </testcase>
 </testsuite>

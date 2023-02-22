@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		}
 //		,dryRun = true 												// to generate the step definitions
-		,tags = "@CalendarUI"
+		,tags = "@Alerts"
 )
 
 public class TestNGTestRunner extends AbstractTestNGCucumberTests {
