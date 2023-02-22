@@ -19,10 +19,19 @@ Background:
     And User enters "Ind" in the dropdown search field
     Then User selects "India" from the autosuggest dropdown
     
-  @WebElements @CheckBox
-	Scenario: AutomationCheckbox Element
+  @WebElements @RadioButton
+	Scenario: Automation of Radio button Element
 		Given user is on the home page of SpiceJet Page
-    Then User selects checkbox of "Senior Citizen"
+    Then User selects radio button of "Senior Citizen"
     
-    
-    
+  @WebElements @CheckBox
+	Scenario: Automation of Checkbox Element
+		Given user is on the home page of Practice Page
+		And User selects checkbox of "option1"
+    Then Verify checkbox of "option1" is selected
+    And Get the count of checkboxes present on the page
+       
+  @WebElements @CalendarUI
+	Scenario: Automation of Calendar UI Element
+		Given user is on the home page of SpiceJet Page
+    Then User selects today's date on calendar

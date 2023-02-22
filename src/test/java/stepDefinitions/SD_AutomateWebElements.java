@@ -1,5 +1,8 @@
 package stepDefinitions;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -59,9 +62,70 @@ public class SD_AutomateWebElements extends TestBase {
 		getURL(config.getProperty("baseURL_SpiceJet"));
 	}
 
-	@Then("User selects checkbox of {string}")
-	public void user_selects_checkbox_of(String string) {
+	@Then("User selects radio button of {string}")
+	public void user_selects_radio_button_of(String string) {
 		driver.findElement(By.xpath(OR.getProperty("xpath_SeniorCitizen").replace("Senior", string))).click();
-		//click("xpath_SeniorCitizen","Radio Button of senior citizen");
+		// click("xpath_SeniorCitizen","Radio Button of senior citizen");
+	}
+
+	@Then("Verify checkbox of {string} is selected")
+	public void verify_checkbox_of_is_selected(String string) {
+		boolean bool = driver.findElement(By.xpath("//input[@type='checkbox'][@value='option1']")).isSelected();
+		System.out.println("Checkbox of option1 is selected: " + bool);
+		Assert.assertEquals(bool, true);
+	}
+
+	@Then("Get the count of checkboxes present on the page")
+	public void get_the_count_of_checkboxes_present_on_the_page() {
+		// Write code here that turns the phrase above into concrete actions
+
+		int count = driver.findElements(By.xpath("//input[@type='checkbox']")).size();
+		System.out.println("Count of checkboxes: " + count);
+	}
+
+	@Given("User selects checkbox of {string}")
+	public void user_selects_checkbox_of(String string) {
+		driver.findElement(By.xpath("//input[@type='checkbox'][@value='option1']")).click();
+	}
+
+	@Then("User selects today's date on calendar")
+	public void user_selects_today_s_date_on_calendar() throws InterruptedException {
+		click("xpath_datePicker", "Date Picker");
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.MONTH, 2);
+		String monthName = (new SimpleDateFormat("MMMM YYYY").format(cal.getTime()));
+		String todaysDate = (new SimpleDateFormat("d").format(cal.getTime()));
+		System.out.println(monthName);
+		System.out.println(todaysDate);
+//		String monthNameOncalendar = driver.findElement(By.xpath(OR.getProperty("xpath_MonthName_first"))).getText();
+//		System.out.println(monthNameOncalendar);
+//		//get parent div of the month
+//		
+//		if(monthName.equalsIgnoreCase(monthNameOncalendar)) {
+//			System.out.println("Clicking on today's date");
+//		}
+
+// Get list of Month Names first to compare
+List<WebElement> monthelements = driver
+		.findElements(By.xpath("//div[@class='css-76zvg2 r-homxoj r-adyw6z r-1kfrs79']"));
+for (WebElement mon : monthelements) {
+	System.out.println("Checking: " + mon.getText());
+	if (mon.getText().equalsIgnoreCase(monthName)) {
+
+		//Navigate to proper parent where from we can go to the date
+		
+		WebElement parentMonthEl = mon.findElement(By.xpath("../.."));
+		
+		//navigate relatively to the proper date
+		parentMonthEl.findElement(By.xpath(".//div[contains(text(),'" + todaysDate + "')]")).click();
+		String selectedDate = driver
+				.findElement(By.xpath("//div[contains(text(),'Departure Date')]/../div[2]/div[1]")).getText();
+
+		System.out.println("Selected Date: " + selectedDate);
+		break;
+	}
+
+}
+
 	}
 }
